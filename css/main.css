@@ -1,7 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    font-weight: normal;
+    box-sizing: border-box;
 }
 
 .clearfix::after {
@@ -44,22 +48,23 @@
 }
 /* 第一阶段顶部结束 */
 
-.site-header{
+.header-bar{
     height: 100px;
 }
 .header-logo{
-    line-height: 100px;
+    width: 56px;
+    height: 56px;
     padding: 22px 0;
     float: left;
 }
-.site-header ul{
+.first-ul{
     display: inline-block;
     float: left;
     line-height: 100px;
     padding-left: 171px;
 
 }
-.site-header  li{
+.first-ul  li{
     display: inline-block;
     padding: 0 8px;
 }
@@ -88,3 +93,323 @@
     border: 1px solid #e0e0e0;
     margin: -6px;
 }
+/* 开始侧边栏 */
+.catalog{
+    position: relative;
+}
+.left-nav{
+    position: absolute;
+}
+.catalog ul{
+    width: 234px;
+    height: 460px;
+    background: rgba(101,101,101,0.5);
+    padding: 20px 0;
+    display: inline-block;
+}
+.catalog ul li{
+    width: 234px;
+    height: 42px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 0 0 30px;
+    line-height: 42px;
+}
+.catalog ul li em{
+    display: inline-block;
+    float: right;
+    margin-right: 35px;
+}
+.carousel{
+    width: 1226px;
+    height: 460px;
+    display: inline-block;
+}
+.carousel img{
+    height: 100%;
+}
+.arr-l,.arr-r{
+    width: 30px;
+    height: 60px;
+    background: rgba(0,0,0,0,3);
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    padding: 20px 0;
+}
+.arr-l:hover{
+    background: rgba(109, 106, 106,0.5);
+}
+.arr-r:hover{
+    background: rgba(109, 106, 106,0.5);
+}
+.arr-l{
+    color: #fff;
+    left: 234px;
+}
+.arr-r{
+    color: #fff;
+    right: 0px;
+    padding: 20px 10px;
+}
+.carousel ol{
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    right: 30px;
+    bottom: 20px;
+}
+.carousel ol a{
+    display: inline-block;
+    float: right;
+    line-height: 20px;
+    margin: 4px 5px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #333;
+    border-radius: 50%;
+    /* background-color: #fff; */
+}
+.carousel ol a:hover{
+    background-color: #fff;
+}
+.footerbar{
+    margin-top: 11px;
+}
+.homebar{
+    float: left;
+    font-size: 12px;
+    background-color: #5f5750;
+}
+.homebar ul{
+    width: 234px;
+    height: 170px;
+    padding: 3px;
+}
+.homebar li {
+    display: inline-block;
+    width: 73px;
+    height: 82px;
+}
+.homebar a{
+    color: #ccc;
+    font-size: 16px;
+}
+.homebar i{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.homephoto{
+    width: 992px;
+    height: 170px;
+    display: inline-block;
+}
+.homephoto li{
+    float: right;
+    margin-left: 14px;
+}
+.homephoto ul li a img{
+    display: inline-block;
+    width: 316px;
+    height: 170px;
+}
+/* 头部完成，开始主体部分 */
+.pagemain {
+    background-color: #f5f5f5;
+    margin-top: 50px;
+}
+.qshop h2{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+}
+.requery{
+    float: right;
+    margin-top: 20px;
+}
+.requery a {
+    display: inline-block;
+    width: 36px;
+    height: 24px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+}
+.qshop ul{
+   margin-left: -15px;
+}
+.qshop li{
+    float: left;
+    width: 234px;
+    height: 340px;
+    margin-left: 14px;
+}
+#first-product {
+    border-top: 1px solid red;
+    background-color: #f1eded;
+    padding-top: 39px;
+}
+/* #first-product li {
+    background-color: #f1eded;
+} */
+.product {
+    border-top: 1px solid green;
+    padding-top: 39px;
+    text-align: center;
+    background-color: rgba(0,0,0,0,0);
+}
+.qshop .first-product .round{
+    font-size: 21px;
+    color: red;
+    padding-top: 15px;
+    text-align: center;
+}
+.first-product img {
+    display: block;
+    margin: 25px auto;
+}
+.first-product .desc {
+    font-size: 15px;
+    color: rgba(0,0,0,0.54);
+    text-align: center;
+}
+.first-product .countdown {
+    margin: 25px auto;
+    text-align: center;
+}
+.first-product .countdown span {
+    display: inline-block;
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    width: 46px;
+    height: 46px;
+    color: #fff;
+    background-color: #605751;
+}
+.first-product .countdown i {
+    font-size: 24px;
+    color: #605751;
+    font-weight: bold;
+}
+.product img{
+    display: block;
+    margin: 0 auto;
+}
+.product h3 {
+    font-size: 16px;
+    color: #212121;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 22px 20px 3px;
+    text-align: center;
+    white-space: nowrap;
+}
+.product p {
+    font-size: 12px;
+    color: #b0b0b0;
+    display: block;
+    margin: 0 auto 10px;
+    text-align: center;
+    height: 16px;
+}
+.product  span {
+    color: #ff6709;
+}
+.product  del {
+    color: #b0b0b0;
+    text-decoration: line-through;
+}
+.qshop ul li {
+    background-color: #fff;
+}
+
+.mijia{
+    width: 1226px;
+    height: 120px;
+}
+.mijia img{
+    width: 110px;
+    height: 110px;
+    margin-left: 563px;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+}
+
+/* 小米快购部分结束 */
+.callshop-header {
+    height: 60px;
+}
+.callshop-header h2 {
+    display: inline-block; 
+    line-height: 60px;
+}
+.lookall {
+    float: right;
+    line-height: 60px;
+}
+.lookall a{
+    display: inline-block;
+    color: #000;
+}
+.callshop>img {
+    display: inline-block;
+    width: 234px;
+    height: 614px;
+    background-color: #fff;
+}
+.callshop>img:hover{
+    box-shadow: 0 20px 40px rgba(0,0,0,.1);
+}
+.callshop ul {
+    float: right;
+    width: 992px;
+    height: 614px;
+}
+.callshop .shop-list li {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    width: 234px;
+    height: 300px;
+    background-color: #fff;
+    margin: 0 0 14px 14px;
+    padding: 20px 0;
+}
+.callshop .shop-list li:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,.1);
+}
+.shop-list li img{
+    width: 160px;
+    height: 160px;   
+}
+.shop-list h3 {
+    font-size: 14px;
+    color: #212121;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 18px 10px 2px;
+    text-align: center;
+    white-space: nowrap;
+}
+.shop-list li p {
+    font-size: 12px;
+    color: #b0b0b0;
+    display: block;
+    margin: 0 auto 10px;
+    text-align: center;
+    height: 16px;
+}
+.shop-list span{
+    display: inline-block;
+    color: #ff6709;
+}
+.shop-list span del {
+    color: #b0b0b0;
+    text-decoration: line-through;
+}
+
+
